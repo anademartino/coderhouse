@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke
+}
+
+a:hover {
+    color: #BEEDDA
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-title {
+    font-family: 'Podkova', serif;
+    text-align: center;
+}
+
+.main-text {
+    margin: 40px;
+    text-align: center;
+}
+
+.img-divider {
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    flex-direction: row;
+}
+
+li {
+    float: right;
+    align-content: flex-start;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.header-icon {
+    height: 30px;
+    margin: 10px;
+}
+
+.footer ul {
+    height: 160px;
+    padding: 30px;
+    text-align: center;
+    font-size: large;
+    color: whitesmoke;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 30%
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:center;
+}
+
+.right{
+    float: right;
+    margin-bottom: 30px;
+}
