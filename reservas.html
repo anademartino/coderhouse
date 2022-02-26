@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--End Bootstrap CDN-->
+    <!--Font Podkova-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!--End Font Podkova-->
+    <!--Font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&family=Roboto:wght@100;400;900&display=swap"
+        rel="stylesheet">
+    <!--End Font Podkova-->
+    <!--CSS-->
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!--End CSS-->
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/jpg" href="/src/img/logo-2.png" />
+    <title>Los Nogales</title>
+</head>
+
+<body class="all">
+    <header>
+        <nav>
+            <ul>
+                <img src="/src/img/logo-2.png" class="header-icon"></i><a href="index.html">Los Nogales</a>"
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="turismo.html">Turismo</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="domos.html">Domos</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="/src/img/2.jpg" width="100%">
+        <h1 class="main-title">Reservas</h1>
+        <div class="container">
+            <form>
+                <div class="form-horizontal">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Telefono">
+                </div>
+                <div class="form-group">
+                    <label for="email">Mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="123 StreetName St.">
+                </div>
+                <div class="form-group">
+                    <label for="huespedes">Huespedes</label>
+                    <select class="form-control" id="huespedes">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="camas">Camas</label>
+                    <select class="form-control" id="camas">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class='col-md-6'>
+                        <div class="form-group">
+                            <label for="checkIn">Check In</label>
+                            <div class='input-group date' id='datetimepicker6'>                                
+                                <input type='text' class="form-control" id="checkIn" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-6'>
+                        <div class="form-group">
+                            <label for="checkOut">Check Out</label>
+                            <div class='input-group date' id='datetimepicker7'>                                
+                                <input type='text' class="form-control" id="checkOut"/>
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comentarios">Aclaraciones</label>
+                    <textarea class="form-control" rows="5" id="comentarios"></textarea>
+                </div>
+                <div class="right">
+                <div class="checkbox">
+                    <label><input type="checkbox"> Recuerdame</label>                    
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <img src="/src/img/logo-2.png" class="header-icon"></i><a href="index.html">Los Nogales - Domos
+                    Ecosustentables - 2022</a>
+            </ul>
+        </nav>
+    </footer>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker6').datetimepicker();
+            $('#datetimepicker7').datetimepicker({
+        useCurrent: false //Important! See issue #1075
+        });
+            $("#datetimepicker6").on("dp.change", function (e) {
+                $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+            });
+            $("#datetimepicker7").on("dp.change", function (e) {
+                $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+            });
+        });
+    </script>
+</body>
+
+</html>
