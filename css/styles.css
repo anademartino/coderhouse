@@ -101,3 +101,10 @@ form{
     float: right;
     margin-bottom: 30px;
 }
+
+.grid-container {
+    display: grid;
+}
+.grid-item{
+    display: grid;
+}
